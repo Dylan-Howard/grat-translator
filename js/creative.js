@@ -28,9 +28,9 @@
         }
     })
 
-    $('#favorite').click(function() {
-      $('#favorite').find('.bot').toggleClass('active');
-    })
+    // $('#translation').change(function() {
+    //   $('#favorite').find('.bot').removeClass('active');
+    // })
 
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();
