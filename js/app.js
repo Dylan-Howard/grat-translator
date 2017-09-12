@@ -14,8 +14,8 @@ app.controller('MainCtrl', [
     ];
 
     $scope.favorites = [
-      {english: 'Trick or Treat', grat: 'Chic o crit'},
-      {english: 'Makeup', grat: 'mac up'},
+      {english: 'trick or treat', grat: 'chic o creat'},
+      {english: 'makeup', grat: 'mac up'},
       {english: 'face', grat: 'fas'}
     ];
 
