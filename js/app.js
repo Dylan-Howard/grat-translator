@@ -25,6 +25,7 @@ app.controller('MainCtrl', [
       for(var i = 0; i < $scope.favorites.length; i++) {
         if($scope.favorites[i].english.toLowerCase() === $scope.english.toLowerCase()) {
           $('#favorite').find('.bot').addClass('active');
+          return;
         } else {
           $('#favorite').find('.bot').removeClass('active');
         }
