@@ -32,6 +32,18 @@ app.controller('MainCtrl', [
       }
     }
 
+    $scope.toggleFavorite = function() {
+      for(var i = 0; i < $scope.favorites.length; i++) {
+        if($scope.english === $scope.favorites[i].english) {
+          console.log('removing item');
+          $scope.favorites.splice(i,1);
+          return;
+        }
+      }
+      console.log('adding item');
+      $scope.addItem('favorites');
+    }
+
     $scope.addItem = function(list) {
       console.log($scope.translation);
       if(list === 'history') {

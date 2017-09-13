@@ -78,7 +78,7 @@
             <input class="translation-input" placeholder="Tap to start" type="text" ng-model="english" ng-change="translate()">
             <span class="underline"></span>
           </div>
-          <button class="col-xs-1" id="translate-btn"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+          <button class="col-xs-1" id="translate-btn" ng-click="addItem('history')"><i class="fa fa-exchange" aria-hidden="true"></i></button>
         </form>
       </div>
     </div>
@@ -91,7 +91,7 @@
           <p id="translation">{{translation}}</p>
         </div>
         <div class="col-xs-12 tool-bar">
-          <div class="tool-btn" id="favorite" ng-click="addItem('favorites')"><i class="fa fa-star-o top" aria-hidden="true"></i><i class="fa fa-star bot" aria-hidden="true"></i></div>
+          <div class="tool-btn" id="favorite" ng-click="toggleFavorite()"><i class="fa fa-star-o top" aria-hidden="true"></i><i class="fa fa-star bot" aria-hidden="true"></i></div>
         </div>
       </div>
     </div>
