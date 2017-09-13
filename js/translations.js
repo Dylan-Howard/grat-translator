@@ -4338,5 +4338,5 @@ function doTranslation(input) {
       transPhrase += transWord;
     }
   }
-  return transPhrase.toLowerCase();
+  return transPhrase;
 }

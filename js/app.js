@@ -21,7 +21,7 @@ app.controller('MainCtrl', [
 
     $scope.translate = function() {
       // console.log(doTranslation($scope.english));
-      $scope.translation = doTranslation($scope.english.toLowerCase());
+      $scope.translation = doTranslation($scope.english);
       for(var i = 0; i < $scope.favorites.length; i++) {
         if($scope.favorites[i].english.toLowerCase() === $scope.english.toLowerCase()) {
           $('#favorite').find('.bot').addClass('active');
@@ -34,9 +34,10 @@ app.controller('MainCtrl', [
 
     $scope.toggleFavorite = function() {
       for(var i = 0; i < $scope.favorites.length; i++) {
-        if($scope.english === $scope.favorites[i].english) {
+        if($scope.english.toLowerCase() === $scope.favorites[i].english.toLowerCase()) {
           console.log('removing item');
           $scope.favorites.splice(i,1);
+          $('#favorite').find('.bot').toggleClass('active');
           return;
         }
       }
