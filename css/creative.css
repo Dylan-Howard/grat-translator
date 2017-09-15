@@ -227,6 +227,7 @@ aside {
   justify-content: flex-end;
 }
 .tool-bar .tool-btn {
+  cursor: pointer;
   font-size: 30px;
   line-height: 30px;
 }
@@ -365,6 +366,28 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-xl {
   padding: 15px 30px;
+}
+.left-buffer-4x {
+  padding-left: 40px;
+}
+footer {
+  padding: 50px;
+}
+
+footer li {
+  list-style: none;
+}
+
+.footer-list > li > a,
+.footer-list > li > a:focus {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  color: #ccc;
+}
+.footer-list > li > a:hover,
+.footer-list > li > a:focus:hover {
+  color: #fff;
 }
 ::-moz-selection {
   color: white;
